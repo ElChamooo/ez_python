@@ -40,5 +40,10 @@ def area(length, width):
     print("Oh you forgot what was the question?")
     time.sleep(2)  # Simulate a time-consuming calculation
 
+def onetotwenty():
+    for i in range(20):
+        print(i+1)
 
-area(5, 3)
+
+def multipleofthree():
+    print([i for i in range(1, 21) if i % 3 == 0])
