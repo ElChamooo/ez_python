@@ -47,3 +47,22 @@ def onetotwenty():
 
 def multipleofthree():
     print([i for i in range(1, 21) if i % 3 == 0])
+
+
+classroom ={
+    "students": [("John", 21, 60), ("Jane", 22, 50), ("Doe", 20, 40)]
+}
+
+print (classroom)
+classroom["students"].append(("Alice", 23, 12))
+print (classroom)
+classroom["students"].remove(("Doe", 20, 40))
+print (classroom)
+max=0
+for student in classroom["students"]:
+    if student[2]>max:
+        max=student[2]
+        name=student[0]
+print("The student with the highest score is "+name+" with a score of "+str(max))
+classroom["students"].sort(key=lambda x: x[2], reverse=True)
+print (classroom)
