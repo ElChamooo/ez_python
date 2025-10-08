@@ -24,3 +24,4 @@ def main():
     print(f"The student with the highest average score is: {best_student}")
 
 main()
+

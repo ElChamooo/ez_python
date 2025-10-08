@@ -50,13 +50,13 @@ def multipleofthree():
 
 
 classroom ={
-    "students": [("John", 21, 60), ("Jane", 22, 50), ("Doe", 20, 40)]
+    "students": [("Louisa", 21, 60), ("Nico", 22, 50), ("Anthony", 20, 40)]
 }
 
 print (classroom)
-classroom["students"].append(("Alice", 23, 12))
+classroom["students"].append(("Sylvain", 23, 12))
 print (classroom)
-classroom["students"].remove(("Doe", 20, 40))
+classroom["students"].remove(("Anthony", 20, 40))
 print (classroom)
 max=0
 for student in classroom["students"]:
@@ -66,3 +66,13 @@ for student in classroom["students"]:
 print("The student with the highest score is "+name+" with a score of "+str(max))
 classroom["students"].sort(key=lambda x: x[2], reverse=True)
 print (classroom)
+
+def make_album(artist_name, album_title, number_of_tracks=None):
+    album = {
+        "artist_name": artist_name,
+        "album_title": album_title
+    }
+    if number_of_tracks:
+        album["number_of_tracks"] = number_of_tracks
+    return album
+
